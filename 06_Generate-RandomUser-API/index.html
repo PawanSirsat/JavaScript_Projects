@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Data</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      p {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+      /* Highlighted text for emphasis */
+      .highlight {
+        text-align: left;
+        background-color: #ffff99;
+        font-weight: bold;
+      }
+
+      .nav-link-button {
+        font-size: 17px;
+        font-weight: bold;
+        margin: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-decoration: none; /* Remove underline */
+        color: #f4f4f4; /* Set text color */
+        padding: 0; /* Remove padding to eliminate border */
+      }
+
+      .nav-link-button:hover {
+        color: #007bff; /* Change the color on hover to mimic link behavior */
+      }
+      .nav-link-button a {
+        color: #007bff; /* Change the color on hover to mimic link behavior */
+      }
+
+      #change {
+        font-size: 15px;
+        font-weight: bold;
+        color: #007bff; /* Set your desired color */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <!-- Left-aligned title -->
+      <a
+        class="navbar-brand"
+        href="#"
+        style="
+          font-family: monospace;
+          font-size: 24px;
+          color: #9beeea;
+          text-shadow: 2px 3px 19px rgb(101 135 224 / 75%);
+        "
+      >
+        <span style="vertical-align: middle">🌟</span> Explore UserVerse
+        <span style="vertical-align: middle">🚀</span>
+      </a>
+
+      <button class="nav-link-button" id="generate-page">
+        <i class="fas fa-user"></i> Generate User
+      </button>
+      <button class="nav-link-button" id="save-page">
+        <i class="fas fa-save"></i> JSON-UserData
+      </button>
+      <!-- Center-aligned page links -->
+      <div class="navbar-nav mx-auto"></div>
+
+      <!-- Right-aligned buttons -->
+      <div class="navbar-nav ml-auto">
+        <a
+          class="nav-link nav-link-api"
+          id="change"
+          href="https://random-data-api.com/api/v2/users"
+          target="_blank"
+          >API Link</a
+        >
+        <button id="saveButton" class="btn btn-primary mr-2">
+          Save locally
+        </button>
+        <button id="next-button" class="btn btn-success">Next</button>
+      </div>
+    </nav>
+
+    <div class="user-container" id="user-container"></div>
+    <div class="user-card" id="user-card"></div>
+    <p>
+      <br /><br />
+      Here's a basic outline of how this process works:
+    </p>
+
+    <ol>
+      <li>
+        <p>
+          <span class="highlight">Fetching Data:</span> To pull data from an
+          API, JavaScript is often used to make asynchronous requests using the
+          <code>fetch()</code> function. This function sends an HTTP request to
+          the API endpoint and waits for a response.
+        </p>
+      </li>
+      <li>
+        <p>
+          <span class="highlight">Receiving Data:</span> Once the API responds,
+          the data is typically returned in JSON format. JSON (JavaScript Object
+          Notation) is a lightweight data interchange format that is easy to
+          work with in JavaScript.
+        </p>
+      </li>
+      <li>
+        <p>
+          <span class="highlight">Using the Data:</span> After receiving the
+          data, it can be processed and displayed on the web page as needed.
+          This can involve updating the DOM (Document Object Model) to insert
+          the data into specific HTML elements.
+        </p>
+      </li>
+      <li>
+        <p>
+          <span class="highlight">Saving Data Locally:</span> In some cases, it
+          may be desirable to save the retrieved data for offline use or to
+          improve performance. Local storage, a feature provided by web
+          browsers, allows developers to store data as key-value pairs in the
+          user's browser. JSON is often used to serialize and deserialize data
+          when saving and retrieving it from local storage.
+        </p>
+      </li>
+    </ol>
+
+    <p>
+      By following these steps, web developers can seamlessly integrate data
+      from external APIs into their applications, providing users with dynamic
+      and up-to-date content.
+    </p>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.user-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.user-card1 {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.user-card1:hover {
+  transform: scale(1.05);
+}
+
+.user-avatar1 {
+  max-width: 100px; /* Set the desired max width */
+  height: auto;
+  border-radius: 50%;
+}
+
+.user-card1 a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.user-card1 a:hover {
+  text-decoration: underline;
+}
+
+.user-card1 p {
+  margin: 10px 0;
+}
+
+.user-data-left,
+.user-data-right {
+  width: 45%; /* Adjust the width as needed */
+}
+.user-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 600px; /* Increased card width for two columns */
+  padding: 20px;
+  margin: 20px auto;
+  text-align: left;
+  display: flex; /* Use flexbox to create two columns */
+  justify-content: space-between; /* Space between the columns */
+  transition: transform 0.2s;
+}
+.user-card:hover {
+  transform: scale(1.05);
+}
+.user-card img {
+  max-width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid rgb(24, 99, 157); /* Add this line for the black border */
+}
+
+.user-data-field {
+  margin: 10px 0;
+}
+
+.user-data-label {
+  font-weight: bold;
+}
+
+.navbar-expand-lg {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.user-image {
+  width: 116px;
+  margin-right: 20px;
+  height: 100px;
+}
