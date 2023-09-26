@@ -1,0 +1,83 @@
+{
+  "easy": [
+    {
+      "question": "What does 'HTML' stand for?",
+      "options": [
+        { "text": "Hyper Text Markup Language", "correct": true },
+        { "text": "High Tech Modern Language", "correct": false },
+        { "text": "Hyperlink Text Management Language", "correct": false },
+        { "text": "Home Tool Markup Language", "correct": false }
+      ]
+    },
+    {
+      "question": "Which keyword is used to declare a variable in JavaScript?",
+      "options": [
+        { "text": "var", "correct": true },
+        { "text": "let", "correct": false },
+        { "text": "const", "correct": false },
+        { "text": "variable", "correct": false }
+      ]
+    }
+  ],
+  "medium": [
+    {
+      "question": "What is a closure in JavaScript?",
+      "options": [
+        {
+          "text": "A function that has access to its outer function's scope",
+          "correct": true
+        },
+        { "text": "An object with hidden properties", "correct": false },
+        { "text": "A loop that runs indefinitely", "correct": false },
+        { "text": "A built-in JavaScript function", "correct": false }
+      ]
+    },
+    {
+      "question": "What is an IIFE?",
+      "options": [
+        { "text": "Immediately Invoked Function Expression", "correct": true },
+        { "text": "Inherited Instance Function Execution", "correct": false },
+        {
+          "text": "Intermediate Instance Function Expression",
+          "correct": false
+        },
+        { "text": "Internal Isolated Function Execution", "correct": false }
+      ]
+    }
+  ],
+  "hard": [
+    {
+      "question": "What is prototypal inheritance in JavaScript?",
+      "options": [
+        {
+          "text": "An object inherits properties and methods from its prototype.",
+          "correct": true
+        },
+        {
+          "text": "A function inherits properties from its child objects.",
+          "correct": false
+        },
+        {
+          "text": "An object copies properties from other objects.",
+          "correct": false
+        },
+        {
+          "text": "An object shares properties with its child objects.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the event loop in JavaScript?",
+      "options": [
+        {
+          "text": "A mechanism that handles asynchronous operations",
+          "correct": true
+        },
+        { "text": "A loop that runs continuously", "correct": false },
+        { "text": "An event listener for mouse clicks", "correct": false },
+        { "text": "An object that tracks events in the DOM", "correct": false }
+      ]
+    }
+  ]
+}

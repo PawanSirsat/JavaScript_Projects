@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programming Quiz</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Programming Quiz</h1>
+      <form id="quiz-form">
+        <select id="language" name="language">
+          <option value="none" selected disabled hidden>
+            Select a Programming Language
+          </option>
+          <option value="javascript">JavaScript</option>
+          <option value="python">Python</option>
+          <option value="java">Java</option>
+
+          <!-- Add more language options as needed -->
+        </select>
+
+        <select id="quiz-type" name="quiz-type">
+          <option value="none" selected disabled hidden>
+            Select Quiz Type
+          </option>
+          <option value="2">2 Questions</option>
+          <option value="5">5 Questions</option>
+        </select>
+
+        <select id="difficulty" name="difficulty">
+          <option value="none" selected disabled hidden>
+            Select Difficulty
+          </option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+
+        <button type="submit" id="start">Start Quiz</button>
+      </form>
+      <div id="question-container"></div>
+      <button id="next-button" style="display: none">Next</button>
+    </div>
+    <script src="./app.js"></script>
+    <!-- Include your JavaScript files here -->
+  </body>
+</html>
