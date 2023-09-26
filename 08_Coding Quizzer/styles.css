@@ -65,6 +65,16 @@ button[type='submit']:hover {
 /* Add this to your existing CSS */
 
 #question-container {
+  display: none;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#result-container {
+  display: none;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);

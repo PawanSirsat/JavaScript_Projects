@@ -1,5 +1,11 @@
+const result = document.getElementById('result-container')
+const questionContainer = document.getElementById('question-container')
+const form = document.getElementById('quiz-form')
+
 let quizData
 let currentQuestionIndex = 0
+let correct
+let wrong
 
 async function loadQuizData(language, difficulty) {
   try {
@@ -13,14 +19,15 @@ async function loadQuizData(language, difficulty) {
 }
 
 function displayQuestion(questionIndex) {
-  const questionContainer = document.getElementById('question-container')
+  questionContainer.style.display = 'block'
   const question = quizData[questionIndex]
+  correct = 0
+  wrong = 0
 
   if (!question) {
     endQuiz()
     return
   }
-
   const questionHTML = `
           <h2>${question.question}</h2>
           <ul>
@@ -36,11 +43,9 @@ function displayQuestion(questionIndex) {
     )
     .join('')}
 </div>
-
           </ul>
           <button type="button" onclick="checkAnswer(${questionIndex})">Submit</button>
         `
-
   questionContainer.innerHTML = questionHTML
   currentQuestionIndex = questionIndex
 }
@@ -49,10 +54,22 @@ function displayNextQuestion() {
   if (currentQuestionIndex < quizData.length - 1) {
     displayQuestion(currentQuestionIndex + 1)
   } else {
+    document.getElementById('question-container').style.display = 'none'
+    result.style.display = 'block'
+    const innerHTML = `
+              <h3 id="res">Correct : ${correct}</h3>
+              <h3 id="res">Wrong : ${wrong}</h3>
+              <button type="button" onclick="startAgain()">Start Again</button>
+    `
+    result.innerHTML = innerHTML
     alert('No more questions.')
   }
 }
 
+function startAgain() {
+  result.style.display = 'none'
+  form.style.display = 'block'
+}
 function startQuiz() {
   const language = document.getElementById('language').value
   const difficulty = document.getElementById('difficulty').value
@@ -65,7 +82,6 @@ function startQuiz() {
   loadQuizData(language, difficulty)
 
   document.getElementById('quiz-form').style.display = 'none'
-  document.getElementById('next-button').style.display = 'block'
 }
 
 function checkAnswer(questionIndex) {
@@ -83,8 +99,10 @@ function checkAnswer(questionIndex) {
   )
 
   if (selectedAnswerIndex.value === correctAnswerIndex.toString()) {
+    correct++
     alert('Correct answer!')
   } else {
+    wrong++
     alert('Wrong answer. Try again!')
   }
 
