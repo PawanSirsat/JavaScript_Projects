@@ -17,6 +17,84 @@
         { "text": "const", "correct": false },
         { "text": "variable", "correct": false }
       ]
+    },
+    {
+      "question": "What is the result of adding a number and a string in JavaScript?",
+      "options": [
+        { "text": "The number is converted to a string", "correct": true },
+        { "text": "An error is thrown", "correct": false },
+        { "text": "The string is converted to a number", "correct": false },
+        { "text": "The number and string are concatenated", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the symbol for single-line comments in JavaScript?",
+      "options": [
+        { "text": "//", "correct": true },
+        { "text": "/*", "correct": false },
+        { "text": "--", "correct": false },
+        { "text": "#", "correct": false }
+      ]
+    },
+    {
+      "question": "Which function is used to parse a string and return it as a floating-point number in JavaScript?",
+      "options": [
+        { "text": "parseFloat()", "correct": true },
+        { "text": "parseInt()", "correct": false },
+        { "text": "parseDouble()", "correct": false },
+        { "text": "parseFloatValue()", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the purpose of the `alert()` function in JavaScript?",
+      "options": [
+        {
+          "text": "Display a message box with a message and an OK button",
+          "correct": true
+        },
+        { "text": "Perform arithmetic calculations", "correct": false },
+        { "text": "Create a new variable", "correct": false },
+        { "text": "Define a function", "correct": false }
+      ]
+    },
+    {
+      "question": "How do you declare a constant variable in JavaScript?",
+      "options": [
+        { "text": "Using the `const` keyword", "correct": true },
+        { "text": "Using the `let` keyword", "correct": false },
+        { "text": "Using the `var` keyword", "correct": false },
+        { "text": "Using the `constant` keyword", "correct": false }
+      ]
+    },
+    {
+      "question": "Which operator is used for strict equality comparison in JavaScript?",
+      "options": [
+        { "text": "==", "correct": false },
+        { "text": "===", "correct": true },
+        { "text": "!=", "correct": false },
+        { "text": "!==", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the purpose of the `console.log()` function in JavaScript?",
+      "options": [
+        {
+          "text": "Print messages to the console for debugging",
+          "correct": true
+        },
+        { "text": "Display a pop-up dialog box", "correct": false },
+        { "text": "Perform mathematical calculations", "correct": false },
+        { "text": "Define a new function", "correct": false }
+      ]
+    },
+    {
+      "question": "Which data type represents a sequence of characters in JavaScript?",
+      "options": [
+        { "text": "Number", "correct": false },
+        { "text": "Boolean", "correct": false },
+        { "text": "String", "correct": true },
+        { "text": "Array", "correct": false }
+      ]
     }
   ],
   "medium": [
@@ -42,6 +120,147 @@
           "correct": false
         },
         { "text": "Internal Isolated Function Execution", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the 'this' keyword in JavaScript?",
+      "options": [
+        {
+          "text": "It refers to the current function's scope",
+          "correct": false
+        },
+        { "text": "It refers to the global object", "correct": false },
+        {
+          "text": "It refers to the current object's context",
+          "correct": true
+        },
+        {
+          "text": "It refers to the parent function's context",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the difference between 'null' and 'undefined' in JavaScript?",
+      "options": [
+        {
+          "text": "'null' represents an intentional absence of any object value",
+          "correct": true
+        },
+        {
+          "text": "'undefined' represents an uninitialized variable",
+          "correct": true
+        },
+        { "text": "'null' and 'undefined' are the same", "correct": false },
+        {
+          "text": "'null' is used for numbers, and 'undefined' is used for strings",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is event delegation in JavaScript?",
+      "options": [
+        {
+          "text": "It refers to the process of delegating events to the DOM",
+          "correct": false
+        },
+        {
+          "text": "It allows a parent element to handle events for its child elements",
+          "correct": true
+        },
+        {
+          "text": "It refers to the use of 'event' delegation in event listeners",
+          "correct": false
+        },
+        {
+          "text": "It allows events to be triggered on demand",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the 'bind()' method used for in JavaScript?",
+      "options": [
+        {
+          "text": "To create a new function with a fixed set of arguments",
+          "correct": true
+        },
+        {
+          "text": "To change the value of 'this' within a function",
+          "correct": false
+        },
+        { "text": "To concatenate two strings", "correct": false },
+        {
+          "text": "To check if an element exists in an array",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the purpose of the 'use strict' directive in JavaScript?",
+      "options": [
+        { "text": "To declare a variable as strictly typed", "correct": false },
+        {
+          "text": "To enable strict type checking in JavaScript",
+          "correct": false
+        },
+        {
+          "text": "To enforce a stricter set of coding rules and prevent common mistakes",
+          "correct": true
+        },
+        { "text": "To use strict mode for debugging", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the purpose of the 'Promise' object in JavaScript?",
+      "options": [
+        {
+          "text": "To represent a future value that may not be available yet",
+          "correct": true
+        },
+        {
+          "text": "To handle exceptions and errors in asynchronous code",
+          "correct": false
+        },
+        { "text": "To create new instances of objects", "correct": false },
+        { "text": "To define custom functions", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the difference between 'let' and 'var' for variable declaration?",
+      "options": [
+        {
+          "text": "'let' has block scope, while 'var' has function scope",
+          "correct": true
+        },
+        {
+          "text": "'let' is used for integers, while 'var' is used for strings",
+          "correct": false
+        },
+        {
+          "text": "'let' is used for global variables, while 'var' is used for local variables",
+          "correct": false
+        },
+        {
+          "text": "There is no difference between 'let' and 'var'",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is a 'Promise.all()' in JavaScript?",
+      "options": [
+        { "text": "A method to create a new Promise", "correct": false },
+        {
+          "text": "A method to handle multiple Promises concurrently and wait for all of them to resolve",
+          "correct": true
+        },
+        { "text": "A method to reject all Promises at once", "correct": false },
+        {
+          "text": "A method to pause the execution of Promises",
+          "correct": false
+        }
       ]
     }
   ],
@@ -77,6 +296,132 @@
         { "text": "A loop that runs continuously", "correct": false },
         { "text": "An event listener for mouse clicks", "correct": false },
         { "text": "An object that tracks events in the DOM", "correct": false }
+      ]
+    },
+    {
+      "question": "What is a 'closure' in JavaScript?",
+      "options": [
+        {
+          "text": "A function that returns another function",
+          "correct": false
+        },
+        {
+          "text": "A function that has access to its parent's scope, even after the parent function has finished executing",
+          "correct": true
+        },
+        { "text": "An object that holds variables", "correct": false },
+        { "text": "A function with no parameters", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the 'prototype' property in JavaScript?",
+      "options": [
+        {
+          "text": "It refers to the built-in prototype object",
+          "correct": false
+        },
+        {
+          "text": "It is an object from which other objects inherit methods and properties",
+          "correct": true
+        },
+        { "text": "It is used to create new objects", "correct": false },
+        { "text": "It is a reserved keyword in JavaScript", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the difference between 'null' and 'undefined' in JavaScript?",
+      "options": [
+        {
+          "text": "'null' represents an intentional absence of any object value",
+          "correct": true
+        },
+        {
+          "text": "'undefined' represents a variable that has not been declared or assigned a value",
+          "correct": true
+        },
+        {
+          "text": "'null' is used for numbers, and 'undefined' is used for strings",
+          "correct": false
+        },
+        { "text": "'null' and 'undefined' are equivalent", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the purpose of the 'async' and 'await' keywords in JavaScript?",
+      "options": [
+        {
+          "text": "'async' is used to declare asynchronous functions, and 'await' is used to pause the execution of a function until a promise is resolved",
+          "correct": true
+        },
+        {
+          "text": "'async' is used to define callback functions, and 'await' is used to trigger events",
+          "correct": false
+        },
+        {
+          "text": "'async' and 'await' are used to create loops",
+          "correct": false
+        },
+        {
+          "text": "'async' and 'await' are used for error handling",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the purpose of the 'Map' object in JavaScript?",
+      "options": [
+        {
+          "text": "To store key-value pairs and maintain the insertion order of the keys",
+          "correct": true
+        },
+        { "text": "To create lists of elements", "correct": false },
+        { "text": "To define CSS styles for elements", "correct": false },
+        { "text": "To handle asynchronous operations", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the 'Symbol' data type in JavaScript?",
+      "options": [
+        {
+          "text": "A unique and immutable data type that is often used as an object property key",
+          "correct": true
+        },
+        {
+          "text": "A data type that represents mathematical symbols",
+          "correct": false
+        },
+        { "text": "A reserved keyword in JavaScript", "correct": false },
+        { "text": "A type used for handling exceptions", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the purpose of the 'reduce()' method in JavaScript?",
+      "options": [
+        {
+          "text": "To reduce the size of an array by removing empty elements",
+          "correct": false
+        },
+        {
+          "text": "To apply a function against an accumulator and each element in the array to reduce it to a single value",
+          "correct": true
+        },
+        { "text": "To sort an array in ascending order", "correct": false },
+        { "text": "To iterate over an object's properties", "correct": false }
+      ]
+    },
+    {
+      "question": "What is a 'Generator' function in JavaScript?",
+      "options": [
+        {
+          "text": "A function that generates random numbers",
+          "correct": false
+        },
+        {
+          "text": "A function that creates iterators with the 'yield' keyword",
+          "correct": true
+        },
+        { "text": "A function that generates HTML code", "correct": false },
+        { "text": "A function that generates CSS styles", "correct": false }
       ]
     }
   ]

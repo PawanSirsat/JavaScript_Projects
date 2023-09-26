@@ -1,0 +1,368 @@
+{
+  "easy": [
+    {
+      "question": "What is Python?",
+      "options": [
+        { "text": "A type of snake", "correct": false },
+        { "text": "A high-level programming language", "correct": true },
+        { "text": "A computer brand", "correct": false },
+        { "text": "A type of pasta", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the main purpose of Python's 'print()' function?",
+      "options": [
+        { "text": "To display text on the screen", "correct": true },
+        { "text": "To perform mathematical calculations", "correct": false },
+        { "text": "To create graphics", "correct": false },
+        { "text": "To play music", "correct": false }
+      ]
+    },
+    {
+      "question": "Which keyword is used to define a function in Python?",
+      "options": [
+        { "text": "def", "correct": true },
+        { "text": "function", "correct": false },
+        { "text": "define", "correct": false },
+        { "text": "func", "correct": false }
+      ]
+    },
+    {
+      "question": "What is an 'if' statement used for in Python?",
+      "options": [
+        { "text": "To repeat a block of code", "correct": false },
+        { "text": "To define a function", "correct": false },
+        {
+          "text": "To make decisions and execute code conditionally",
+          "correct": true
+        },
+        { "text": "To create a loop", "correct": false }
+      ]
+    },
+    {
+      "question": "What does 'PEP' stand for in the context of Python?",
+      "options": [
+        { "text": "Python Educational Program", "correct": false },
+        { "text": "Python Enhancement Proposal", "correct": true },
+        { "text": "Python Execution Plan", "correct": false },
+        { "text": "Python Error Prevention", "correct": false }
+      ]
+    },
+    {
+      "question": "Which data type is used to store a sequence of characters in Python?",
+      "options": [
+        { "text": "Integer", "correct": false },
+        { "text": "Float", "correct": false },
+        { "text": "String", "correct": true },
+        { "text": "Boolean", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the result of '3 + 5' in Python?",
+      "options": [
+        { "text": "8", "correct": true },
+        { "text": "15", "correct": false },
+        { "text": "53", "correct": false },
+        { "text": "35", "correct": false }
+      ]
+    },
+    {
+      "question": "What does the 'len()' function do in Python?",
+      "options": [
+        { "text": "Calculate the logarithm", "correct": false },
+        { "text": "Return the length of a sequence", "correct": true },
+        { "text": "Convert to lowercase", "correct": false },
+        { "text": "Round to the nearest integer", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the purpose of Python's 'for' loop?",
+      "options": [
+        { "text": "To define a function", "correct": false },
+        {
+          "text": "To make decisions and execute code conditionally",
+          "correct": false
+        },
+        {
+          "text": "To repeat a block of code a specified number of times",
+          "correct": true
+        },
+        { "text": "To create a sequence of numbers", "correct": false }
+      ]
+    },
+    {
+      "question": "Which symbol is used for comments in Python?",
+      "options": [
+        { "text": "#", "correct": true },
+        { "text": "//", "correct": false },
+        { "text": "/* */", "correct": false },
+        { "text": "--", "correct": false }
+      ]
+    }
+  ],
+  "medium": [
+    {
+      "question": "What is a Python tuple?",
+      "options": [
+        { "text": "A collection of key-value pairs", "correct": false },
+        { "text": "A sequence of characters", "correct": false },
+        {
+          "text": "An ordered, immutable collection of elements",
+          "correct": true
+        },
+        { "text": "A list of integers", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the difference between 'append()' and 'extend()' methods in Python lists?",
+      "options": [
+        {
+          "text": "'append()' adds a single element to the end of a list, while 'extend()' adds multiple elements from an iterable.",
+          "correct": true
+        },
+        {
+          "text": "'append()' is used for strings, and 'extend()' is used for integers.",
+          "correct": false
+        },
+        {
+          "text": "'append()' removes the last element of a list, while 'extend()' adds elements to the beginning.",
+          "correct": false
+        },
+        {
+          "text": "'append()' and 'extend()' are synonyms and can be used interchangeably.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the purpose of Python's 'try...except' block?",
+      "options": [
+        { "text": "To define a function", "correct": false },
+        { "text": "To create a loop", "correct": false },
+        {
+          "text": "To handle exceptions and errors gracefully",
+          "correct": true
+        },
+        { "text": "To calculate the square root of a number", "correct": false }
+      ]
+    },
+    {
+      "question": "Which of the following is NOT a valid Python variable name?",
+      "options": [
+        { "text": "my_variable", "correct": false },
+        { "text": "123_variable", "correct": true },
+        { "text": "_variable", "correct": false },
+        { "text": "Variable123", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the purpose of a Python 'set' data type?",
+      "options": [
+        { "text": "To store key-value pairs", "correct": false },
+        { "text": "To store a collection of unique elements", "correct": true },
+        { "text": "To define a function", "correct": false },
+        { "text": "To create a sequence of characters", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the result of '2 ** 3' in Python?",
+      "options": [
+        { "text": "8", "correct": true },
+        { "text": "6", "correct": false },
+        { "text": "12", "correct": false },
+        { "text": "23", "correct": false }
+      ]
+    },
+    {
+      "question": "What is a Python dictionary?",
+      "options": [
+        { "text": "A collection of ordered elements", "correct": false },
+        {
+          "text": "An unordered collection of key-value pairs",
+          "correct": true
+        },
+        { "text": "A list of integers", "correct": false },
+        { "text": "A sequence of characters", "correct": false }
+      ]
+    },
+    {
+      "question": "What does the 'break' statement do in a Python loop?",
+      "options": [
+        {
+          "text": "It exits the loop and continues to the next iteration.",
+          "correct": false
+        },
+        {
+          "text": "It continues to the next iteration of the loop.",
+          "correct": false
+        },
+        { "text": "It exits the loop prematurely.", "correct": true },
+        { "text": "It repeats the loop from the beginning.", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the purpose of Python's 'enumerate()' function?",
+      "options": [
+        { "text": "To find the sum of a list of numbers.", "correct": false },
+        {
+          "text": "To count the number of elements in a list.",
+          "correct": false
+        },
+        {
+          "text": "To iterate over a list while keeping track of the index and value of each element.",
+          "correct": true
+        },
+        {
+          "text": "To sort a list of strings alphabetically.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which operator is used for membership testing in Python?",
+      "options": [
+        { "text": "=>", "correct": false },
+        { "text": "in", "correct": true },
+        { "text": "&", "correct": false },
+        { "text": "not", "correct": false }
+      ]
+    }
+  ],
+  "hard": [
+    {
+      "question": "What is the Global Interpreter Lock (GIL) in Python?",
+      "options": [
+        {
+          "text": "A mechanism that prevents multiple threads from executing Python bytecodes simultaneously.",
+          "correct": true
+        },
+        {
+          "text": "A global variable used for storing configuration settings.",
+          "correct": false
+        },
+        {
+          "text": "A built-in Python module for handling file I/O.",
+          "correct": false
+        },
+        {
+          "text": "A security feature in Python for preventing code injection attacks.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the purpose of Python's 'lambda' function?",
+      "options": [
+        { "text": "To define a multi-line function.", "correct": false },
+        { "text": "To create anonymous functions.", "correct": true },
+        { "text": "To convert strings to uppercase.", "correct": false },
+        { "text": "To handle exceptions and errors.", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the Python 'unittest' module used for?",
+      "options": [
+        { "text": "To perform unit testing of Python code.", "correct": true },
+        {
+          "text": "To format and display text in a tabular format.",
+          "correct": false
+        },
+        { "text": "To handle XML data.", "correct": false },
+        { "text": "To manipulate images.", "correct": false }
+      ]
+    },
+    {
+      "question": "Which sorting algorithm is used by Python's built-in 'sorted()' function?",
+      "options": [
+        { "text": "Bubble Sort", "correct": false },
+        { "text": "Quick Sort", "correct": true },
+        { "text": "Insertion Sort", "correct": false },
+        { "text": "Merge Sort", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the purpose of the Python 'pickle' module?",
+      "options": [
+        {
+          "text": "To store and load Python objects in a binary format.",
+          "correct": true
+        },
+        {
+          "text": "To create graphical user interfaces (GUIs).",
+          "correct": false
+        },
+        { "text": "To send HTTP requests.", "correct": false },
+        { "text": "To format and parse dates and times.", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the difference between 'deep copy' and 'shallow copy' in Python?",
+      "options": [
+        {
+          "text": "'Deep copy' creates a new object with a new memory address, while 'shallow copy' creates a new object with the same memory address as the original object.",
+          "correct": true
+        },
+        {
+          "text": "'Shallow copy' creates a new object with a new memory address, while 'deep copy' creates a new object with the same memory address as the original object.",
+          "correct": false
+        },
+        {
+          "text": "'Deep copy' creates a reference to the original object, while 'shallow copy' creates a new object with a new memory address.",
+          "correct": false
+        },
+        {
+          "text": "'Shallow copy' creates a reference to the original object, while 'deep copy' creates a new object with the same memory address as the original object.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the purpose of the 'with' statement in Python?",
+      "options": [
+        { "text": "To create a new variable scope.", "correct": false },
+        { "text": "To define a new function.", "correct": false },
+        {
+          "text": "To manage resources such as files or network connections, ensuring they are properly closed when no longer needed.",
+          "correct": true
+        },
+        { "text": "To iterate over elements in a list.", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the output of the following code?\n\n```\nprint(len([i for i in range(10) if i % 2 == 0]))\n```",
+      "options": [
+        { "text": "5", "correct": true },
+        { "text": "4", "correct": false },
+        { "text": "6", "correct": false },
+        { "text": "10", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the purpose of Python's 'asyncio' library?",
+      "options": [
+        {
+          "text": "To create graphical user interfaces (GUIs).",
+          "correct": false
+        },
+        {
+          "text": "To perform asynchronous I/O operations and concurrent programming.",
+          "correct": true
+        },
+        {
+          "text": "To format and display text in a tabular format.",
+          "correct": false
+        },
+        { "text": "To handle exceptions and errors.", "correct": false }
+      ]
+    },
+    {
+      "question": "Which keyword is used to define a class in Python?",
+      "options": [
+        { "text": "def", "correct": false },
+        { "text": "class", "correct": true },
+        { "text": "function", "correct": false },
+        { "text": "module", "correct": false }
+      ]
+    }
+  ]
+}
