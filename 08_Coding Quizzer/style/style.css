@@ -1,0 +1,413 @@
+/* CSS to enable smooth scrolling */
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+/* Reset some default browser styles */
+body,
+h1,
+p,
+ul,
+li,
+h2 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#feedback-cont {
+  display: none;
+}
+.disable-link {
+  pointer-events: none;
+}
+a {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media (max-width: 768px) {
+  h1,
+  p,
+  ul,
+  li {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+}
+
+#fon {
+  font-size: 30px;
+  padding: 19px 16px;
+}
+.theme-dark .aw-mobile-header,
+.aw-mobile-header.theme-dark .topnav {
+  --p-mobile-header-border-color: rgba(255, 255, 255, 0.1);
+}
+.navbar-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 10px;
+  margin-bottom: 0;
+  list-style: none;
+}
+.bg-dark {
+  background-color: rgb(81 81 81 / 1%) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px); /* Adjust the blur value as needed */
+  transition: transform 0.3s ease;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0.5rem;
+  padding-left: 4.5rem;
+}
+
+.navstyle {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Use border-bottom for the white bottom border */
+  backdrop-filter: blur(4px); /* Adjust the blur value as needed */
+  /* Adjust the background color and opacity as needed */
+  transition: transform 0.3s ease;
+}
+
+/* Centered container styles */
+body {
+  background-color: rgb(25, 25, 28);
+}
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 78vh;
+  padding-top: 100px;
+  background-color: rgb(25, 25, 28);
+}
+.center-container {
+  filter: drop-shadow(0px 0px 12px rgba(213, 140, 160, 0.7));
+  position: absolute;
+  margin: 11px;
+  padding: 25px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 100%;
+  background-color: rgb(25, 25, 28);
+}
+#addQuestion-container {
+  display: none;
+}
+#addlangform {
+  display: none;
+}
+@keyframes blink-shadow2 {
+  0%,
+  100% {
+    filter: drop-shadow(2px 2px 13px rgba(253, 53, 110, 0.1));
+  }
+  50% {
+    filter: drop-shadow(4px 4px 18px rgba(253, 53, 110, 0.9));
+  }
+}
+
+/* Form styles (unchanged from your original CSS) */
+/* ... */
+
+/* Form styles */
+form {
+  display: block;
+  text-align: center;
+}
+label {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 7px;
+  margin-left: 4px;
+}
+textarea,
+select {
+  display: block;
+  width: 97%;
+  padding: 13px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(25, 25, 28);
+}
+input[type='text'] {
+  display: block;
+  width: 97%;
+  padding: 13px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(25, 25, 28);
+}
+#add-form {
+  display: none;
+}
+
+input[type='submit'] {
+  background-color: #fd356e;
+  color: #fff;
+  width: 97%;
+  padding: 13px;
+  border: none;
+  border: 1px solid #ccc;
+
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+input[type='submit']:hover {
+  background-color: #0056b3;
+}
+
+/* highlight */
+.highlight {
+  text-align: left;
+  background-color: #ffff99;
+  font-weight: bold;
+}
+
+.image-container {
+  animation: blink-shadow 4s infinite; /* 10-second loop */
+}
+
+@keyframes blink-shadow {
+  0%,
+  100% {
+    filter: drop-shadow(2px 2px 13px rgba(253, 53, 110, 0.1));
+  }
+  50% {
+    filter: drop-shadow(4px 4px 16px rgba(253, 53, 110, 0.9));
+  }
+}
+
+#question-container {
+  display: none;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: rgb(25, 25, 28);
+}
+#question-container label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-left: 8px;
+}
+#result-container {
+  display: none;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: rgb(25, 25, 28);
+}
+#results-container {
+  display: none;
+  text-align: center; /* Align content to the left */
+  overflow-x: auto;
+  height: 350px;
+  background-color: #4d4c4c;
+  border-radius: 9px;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btncontainer {
+  display: inline-flex;
+}
+#btn {
+  display: block;
+  background-color: #fd356e;
+
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-left: 12px;
+
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#btn2 {
+  display: none;
+  background-color: #fd356e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-left: 12px;
+
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#btn3 {
+  display: inline-block;
+  background-color: #4d4d4d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-left: 12px;
+
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#next-button:hover {
+  background-color: #0056b3;
+}
+
+#options-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for each option */
+.option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.correct {
+  border: 2px solid green;
+  background-color: #eaffea; /* Light green background for correct answers */
+  color: green; /* Text color for correct answers */
+  font-weight: bold; /* Bold text for correct answers */
+  padding: 5px; /* Add some padding for better spacing */
+  border-radius: 5px; /* Rounded corners for the border */
+}
+
+.incorrect {
+  border: 2px solid red;
+  background-color: #ffecec; /* Light red background for incorrect answers */
+  color: red; /* Text color for incorrect answers */
+  font-weight: bold; /* Bold text for incorrect answers */
+  padding: 5px; /* Add some padding for better spacing */
+  border-radius: 5px; /* Rounded corners for the border */
+}
+.btncss {
+  background-color: #fd356e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Style the navbar-brand */
+.navbar-brand {
+  font-family: monospace;
+  font-size: 24px;
+  color: #9beeea;
+  text-shadow: 2px 3px 19px rgba(101, 135, 224, 0.75);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Style the emoji icons */
+.navbar-brand span {
+  margin: 0 5px;
+}
+
+/* Define CSS classes for styling list items */
+
+/* Style the table */
+
+#results-container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Style table headers */
+#results-container th {
+  position: sticky;
+  top: 0;
+  color: rgb(234, 232, 232);
+  text-align: left;
+  padding: 10px;
+  overflow: hidden;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgb(42, 40, 45, 69%);
+
+  backdrop-filter: blur(2px); /* Adjust the blur value as needed */
+  /* Adjust the background color and opacity as needed */
+  transition: transform 0.3s ease;
+}
+
+/* Style table rows */
+#results-container tr {
+  color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Style table cells */
+#results-container td {
+  padding: 10px;
+}
+
+/* Style even rows with a different background color */
+#results-container tr:nth-child(even) {
+  background-color: #c5c3c3;
+}
+
+/* Style odd rows with a different background color */
+#results-container tr:nth-child(odd) {
+  background-color: #cfcdcd;
+}
+
+#results-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Style scrollbar thumb */
+#results-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+/* Style scrollbar track */
+#results-container::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,102 @@
+/* Styles for the popup container */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the popup content */
+.popup-content {
+  color: white;
+  background-color: rgb(25, 25, 28);
+  max-width: 290px;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(232, 230, 230, 0.3);
+  text-align: center;
+}
+
+/* Style for the close button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #555;
+}
+
+/* Style for the close button on hover */
+.close-button:hover {
+  color: red;
+}
+
+/* Style for the Reload button */
+#reloadPage {
+  background-color: #fd356e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Style for the Reload button on hover */
+#reloadPage:hover {
+  background-color: #0056b3;
+}
+#reloadPage2 {
+  background-color: #fd356e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Style for the Reload button on hover */
+#reloadPage2:hover {
+  background-color: #0056b3;
+}
+
+#reloadPage3 {
+  background-color: #fd356e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Style for the Reload button on hover */
+#reloadPage3:hover {
+  background-color: #0056b3;
+}
