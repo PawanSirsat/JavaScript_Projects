@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Start</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
   <style>
     body {
       background-color: #f1f5f8;
@@ -30,22 +29,50 @@
     }
 
     a:hover {
-      color: #555;
+      color: #f1f5f8;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-top: 20px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .centered-li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #333;
+      padding: 10px;
+      transition: background-color 0.3s;
+      cursor: pointer;
+    }
+
+    .centered-li:hover {
+      background-color: #555;
+      color: #fff;
     }
   </style>
 </head>
 
 <body>
+  <h1>My Projects</h1>
+  <p>Explore my portfolio of projects:</p>
   <ul>
-    <li><a href="01_Color_Flipper/index.html">Color Flipper</a></li>
-    <li><a href="02_Counter/index.html">Couter</a></li>
-    <li><a href="03_Guessing-Game/index.html">Guessing Game</a></li>
-    <li><a href="04_Review-project/index.html">Reviews</a></li>
-    <li><a href="05_Shopping-Cart-JS/index.html">Shopping Cart</a></li>
-    <li><a href="06_Generate-RandomUser-API/index.html">Generate Random User</a></li>
-    <li><a href="07_Random_Joke-API/index.html">Random Joke</a></li>
-    <li><a href="08_Coding Quizzer/index.html">Quizzer</a></li>
-    <li><a href="09_Check-Box/index.html">CheckBox Facebook</a></li>
+    <li class="centered-li"><a href="01_Color_Flipper/index.html">Color Flipper</a></li>
+    <li class="centered-li"><a href="02_Counter/index.html">Counter</a></li>
+    <li class="centered-li"><a href="03_Guessing-Game/index.html">Guessing Game</a></li>
+    <li class="centered-li"><a href="04_Review-project/index.html">Reviews</a></li>
+    <li class="centered-li"><a href="05_Shopping-Cart-JS/index.html">Shopping Cart</a></li>
+    <li class="centered-li"><a href="06_Generate-RandomUser-API/index.html">Generate Random User</a></li>
+    <li class="centered-li"><a href="07_Random_Joke-API/index.html">Random Joke</a></li>
+    <li class="centered-li"><a href="08_Coding Quizzer/index.html">Quizzer</a></li>
+    <li class="centered-li"><a href="09_Check-Box/index.html">CheckBox Facebook</a></li>
     <!-- Add links to other HTML files here -->
   </ul>
 </body>
