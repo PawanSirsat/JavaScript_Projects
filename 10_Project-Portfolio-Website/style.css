@@ -1,0 +1,251 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+/* Style the "Projects" section */
+.projects {
+  text-align: center;
+  padding: 20px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust the spacing between projects as needed */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  flex: 1; /* Each project takes an equal width */
+  max-width: 350px; /* Limit the maximum width for larger screens */
+  text-align: left; /* Align text to the left */
+}
+
+.project-info {
+  flex: 1;
+  padding-right: 20px; /* Add spacing between project info and actions */
+  text-align: left;
+}
+.project-info img {
+  height: 250px;
+  width: 350px;
+}
+
+.project-actions {
+  display: inline-flex;
+  /* flex-direction: column;
+  justify-content: space-between; */
+}
+
+.project-actions img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; /* Add spacing between the icon and the text */
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-top: 0; /* Remove the default margin from the heading */
+}
+
+.project p {
+  margin: 10px 0;
+}
+
+#live {
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+
+  display: inline-flex; /* Display the link as a flex container */
+  align-items: center; /* Center items vertically */
+  text-align: center;
+}
+.project a {
+  text-decoration: none;
+  background-color: #1b1b1b;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+
+  display: inline-flex; /* Display the link as a flex container */
+  align-items: center; /* Center items vertically */
+  text-align: center;
+  margin-left: 10px;
+}
+
+/* Style the hero section with a flexbox layout */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  /* Set the background color as needed */
+  color: #fff;
+  /* Set the text color as needed */
+  padding: 20px;
+}
+
+/* Style the image */
+.hero img {
+  width: 150px;
+  /* Set the image width as needed */
+  height: auto;
+  /* Maintain aspect ratio */
+  border-radius: 50%;
+  /* Makes the image circular for a profile picture effect */
+}
+
+/* Style the hero content */
+.hero-content {
+  flex: 1;
+  margin-left: 20px;
+  /* Add spacing between the image and content */
+}
+
+/* Style the name */
+.hero h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Style the paragraph */
+.hero p {
+  max-width: 500px;
+}
+
+.hero .button {
+  background-color: #1b1b1b;
+  /* Set the button background color as needed */
+  color: #fff;
+  font-weight: 500;
+
+  /* Set the button text color as needed */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+/* Style the button */
+.button {
+  background-color: #007bff;
+  /* Set the button background color as needed */
+  color: #fff;
+  font-weight: 500;
+
+  /* Set the button text color as needed */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Style the "About Me" section */
+.about {
+  background-color: #f0f0f0; /* Set the background color as needed */
+  padding: 40px;
+  text-align: center; /* Center align the content */
+}
+
+/* Style the "About Me" content */
+.about-content {
+  max-width: 800px; /* Set the maximum width of the content */
+  margin: 0 auto; /* Center the content horizontally with margins on both sides */
+}
+
+/* Style the "About Me" heading */
+.about h2 {
+  font-size: 2.5rem; /* Increase the font size for the heading */
+  color: #333; /* Set a slightly darker text color */
+}
+
+/* Style the "About Me" paragraph */
+.about p {
+  margin: 20px 0; /* Add spacing between the paragraph and the heading */
+  font-size: 1.2rem; /* Set the font size for the paragraph */
+}
+
+/* Style the "View Resume" button */
+.about .button {
+  background-color: #007bff; /* Set the button background color as needed */
+  color: #fff; /* Set the button text color as needed */
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Remove list item (li) decorations */
+nav ul,
+.articles ul,
+.projects ul {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+}
+.about {
+  background-color: transparent;
+}
+.about p {
+  font-size: 50px;
+  font-weight: bold;
+}
+.center-icon {
+  display: flex;
+  align-items: center;
+}
+
+.center-icon img {
+  width: 40px;
+  /* Adjust the width as needed */
+  height: 40px;
+  /* Adjust the height as needed */
+}
+
+/* Style the navigation links and remove anchor tag decoration */
+nav li,
+.articles li {
+  margin: 0 20px;
+  /* Add spacing between menu items */
+}
+
+nav a,
+.articles a {
+  text-decoration: none;
+  /* Remove anchor tag decoration */
+  color: #201c1c;
+  /* Set the anchor tag text color to black */
+}
+
+nav li {
+  display: inline-block;
+}
